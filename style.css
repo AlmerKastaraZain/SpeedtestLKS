@@ -5,12 +5,42 @@
 
 .container {
     padding: 20px;
+
 }
 
-.img-contaniner {
+#container {
     width: 600px;
+    height: 332px;
 }
 
-.img-contaniner > img {
-    width: 100%
+.hidden {
+    visibility: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+.img-container {
+    overflow: hidden;
+
+    position: relative;
+}
+
+.img {
+    width: 600px;
+    object-fit: cover;
+
+    position: absolute;
+}
+
+.begone-img {
+    animation: begone 0.4s linear 200ms;
+}
+
+@keyframes begone {
+    0% { opacity: 100; }
+    100% { opacity: 0; }
 }

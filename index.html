@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Split</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="flex container">
         <div>
             <label for="x">X: </label>
-            <input type="number" name="x" id="x">
+            <input id="x-input" type="number" name="x" id="x">
         </div>
         <div>
-            <label for="x">Y: </label>
-            <input type="number" name="x" id="x">
+            <label for="y">Y: </label>
+            <input id="y-input" type="number" name="x" id="x">
         </div>
         <div>
-            <button type="button" id="split">Split Image</button>
+            <button id="split-button" type="button" id="split">Split Image</button>
         </div>
     </div>
-    <div class="img-contaniner">
-        <img src="./image.jpg" />
+    <div id="container" class="grid"> 
+        <img id="img" class="img" src="./image.jpg" />
 
     </div>
 </body>
