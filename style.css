@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Courier New', Courier, monospace  ;
+    background-color: #021314;
+    color: white;
+}
+
+
+nav img {
+    height: 80px;
+}
+
+nav {
+    background-color: #000;
+    height: 80px;
+
+    padding-inline: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.cta {
+    display: flex; 
+    gap: 20px;
+}
+
+.cta a {
+    text-decoration: none;
+}
+
+.header-btn {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 10vw;
+    height: 400px;
+    gap: 20px;
+    padding-block: 60px;
+    margin-bottom: 60px;
+}
+
+.IBM-discover-btn {
+    background-color: #0076D6;
+
+}
+
+.IBM-demo-btn {
+    background-color: #db791e;
+}
+
+.hero-header {
+    font-size: 64px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.hero-description {
+    font-size: 32px;
+}
+
+.computer-container {
+    height: 100%;
+}
+
+.computer-img {
+    height: 400px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .computer-container {
+        display: none;
+    }
+}
+
+.nav-link-container:hover .drop-down-menu {
+    visibility: visible;
+    opacity: 100;
+}
+
+
+.nav-link-container {
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.drop-down-menu {
+    transform: translateY(-20px);
+    position: absolute;
+    background-color: white;
+    top: 100%; 
+    left: 0;
+    z-index: 1;
+    width: 400px;
+    padding-inline: 10px;
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.drop-down-menu div p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.drop-down-menu div p a {
+    width: 100%;
+    padding-left: 12px; 
+    border: #000 2px solid;
+    padding-block: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.drop-down-menu div p a:hover {
+    background-color: #000;
+    color: white;
+}
+
